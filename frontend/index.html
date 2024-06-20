@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CPU Scheduling</h1>
+        <div id="processes">
+            <div class="process">
+                <input name="pid" placeholder="PID">
+                <input name="arrivalTime" placeholder="Arrival Time">
+                <input name="burstTime" placeholder="Burst Time">
+                <input name="priority" placeholder="Priority">
+            </div>
+        </div>
+        <button id="addProcess">Add Process</button>
+        <div>
+            <select id="algorithm">
+                <option value="1">FCFS</option>
+                <option value="2">SJF</option>
+                <option value="3">Round Robin</option>
+                <option value="4">Priority</option>
+            </select>
+            <input id="quantum" placeholder="Quantum (for Round Robin)">
+        </div>
+        <button id="submit">Submit</button>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
